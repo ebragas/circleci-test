@@ -12,7 +12,7 @@ jobs:
       - python/install-deps
       - python/save-cache
       - run:
-          command: make test
+          command: pytest --verbose --color=yes ./ 
           name: Test
 
 workflows:
