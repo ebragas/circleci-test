@@ -10,9 +10,12 @@ jobs:
       - checkout
       - python/load-cache
       - python/install-deps
+      - run:
+          command: pip install requirements_tests.txt
+          name: Install Testing Dependencies
       - python/save-cache
       - run:
-          command: pytest --verbose --color=yes ./ 
+        command: make test
           name: Test
 
 workflows:
