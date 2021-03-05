@@ -15,7 +15,7 @@ jobs:
           name: Install Testing Dependencies
       - python/save-cache
       - run:
-        command: make test
+          command: make test
           name: Test
 
 workflows:
