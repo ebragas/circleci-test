@@ -1,7 +1,7 @@
 TEST_PATH=./
 
 test:
-	pytest --verbose --color=yes $(TEST_PATH)
+	pytest $(TEST_PATH)
 
 run:
 	python main.py
